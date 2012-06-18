@@ -5268,7 +5268,9 @@ XBee-like radio module.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM1702" prefix="IC" uservalue="yes">
+<deviceset name="MCP1702" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;Microchip MCP1702&lt;/b&gt;&lt;br/&gt;
+250mA loq quiescent current (2uA) LDO voltage regulator.</description>
 <gates>
 <gate name="G$1" symbol="MCP1702" x="0" y="0"/>
 </gates>
