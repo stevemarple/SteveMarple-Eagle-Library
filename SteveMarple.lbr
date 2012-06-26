@@ -2993,7 +2993,7 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <text x="0.254" y="1.651" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="DIODE-TH-0.4">
-<description>Diode, thorough-hole 0.4" spacing</description>
+<description>Diode, through-hole 0.4" spacing</description>
 <wire x1="3.175" y1="1.27" x2="1.905" y2="1.27" width="0.254" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="-3.175" y2="1.27" width="0.254" layer="21"/>
 <wire x1="-3.175" y1="1.27" x2="-3.175" y2="0" width="0.254" layer="21"/>
@@ -4151,8 +4151,8 @@ chip</description>
 <smd name="GND" x="8" y="-2" dx="2.54" dy="1.27" layer="1"/>
 <smd name="VDD" x="8" y="-4" dx="2.54" dy="1.27" layer="1"/>
 <smd name="ANT" x="8" y="-6" dx="2.54" dy="1.27" layer="1"/>
-<text x="0" y="5.08" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
-<text x="-5.08" y="-6.35" size="1.27" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<text x="-6.35" y="-8.89" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="1.27" y="-5.08" size="1.27" layer="27" font="vector" ratio="16" rot="R90">&gt;VALUE</text>
 <text x="3.81" y="-6.35" size="1.016" layer="21" ratio="16">Ant.</text>
 <text x="3.81" y="-4.445" size="1.016" layer="21" ratio="16">VCC</text>
 <text x="3.81" y="-2.54" size="1.016" layer="21" ratio="16">GND</text>
@@ -4179,6 +4179,46 @@ chip</description>
 <text x="-18.415" y="-0.635" size="1.27" layer="21">SYNC</text>
 <text x="-18.415" y="-3.175" size="1.27" layer="21">OUT-</text>
 <text x="-18.415" y="-5.715" size="1.27" layer="21">OUT+</text>
+</package>
+<package name="SMA-THD-EDGE">
+<description>Combined SMD edge amd through-hole footprint. SMD edge connector footprint derived from the SparkFun Eagle libary. Through-hole footprint by Steve Marple. Derivative work by Steve Marple.</description>
+<pad name="GND@0" x="-2.54" y="2.54" drill="1.5494" diameter="2.794"/>
+<pad name="GND@1" x="2.54" y="2.54" drill="1.5494" diameter="2.794"/>
+<pad name="GND@3" x="-2.54" y="-2.54" drill="1.5494" diameter="2.1844" shape="octagon"/>
+<pad name="GND@2" x="2.54" y="-2.54" drill="1.5494" diameter="2.1844" shape="octagon"/>
+<pad name="SIG" x="0" y="0" drill="1.5494" diameter="2.794"/>
+<wire x1="-3.175" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="21"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="21"/>
+<smd name="GND@EDGE0" x="-2.54" y="-3.81" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="SIG@EDGE" x="0" y="-3.81" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@EDGE1" x="2.54" y="-3.81" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@EDGE2" x="-2.54" y="-3.81" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@EDGE3" x="2.54" y="-3.81" dx="1.524" dy="4.064" layer="16"/>
+<wire x1="0" y1="0" x2="0" y2="-3.81" width="1.524" layer="1"/>
+</package>
+<package name="SMA-THD">
+<description>SMA through-hole footprint based on data from MOLEX SMA jack connector, document SD-73100-0115.</description>
+<pad name="GND@0" x="-2.54" y="2.54" drill="1.5494" diameter="2.794"/>
+<pad name="GND@1" x="2.54" y="2.54" drill="1.5494" diameter="2.794"/>
+<pad name="GND@3" x="-2.54" y="-2.54" drill="1.5494" diameter="2.794"/>
+<pad name="GND@2" x="2.54" y="-2.54" drill="1.5494" diameter="2.794"/>
+<pad name="SIG" x="0" y="0" drill="1.5494" diameter="2.794"/>
+<wire x1="-3.175" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="21"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="21"/>
+</package>
+<package name="SMA-EDGE">
+<description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
+This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.&lt;/p&gt;
+&lt;p&gt;Taken from Sparkfun library&lt;/p&gt;</description>
+<smd name="GND@0" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="SIG" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
+<smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
 </package>
 </packages>
 <symbols>
@@ -5099,6 +5139,12 @@ XBee-like radio module.</description>
 <pin name="SYNC" x="-10.16" y="0" length="middle"/>
 <pin name="OUT-" x="-10.16" y="-2.54" length="middle" direction="out"/>
 <pin name="OUT+" x="-10.16" y="-5.08" length="middle" direction="out"/>
+</symbol>
+<symbol name="CONN-SMA">
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="SIGNAL" x="-5.08" y="0" visible="off" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7014,6 +7060,41 @@ Eagle file download from Onecall web site</description>
 <connect gate="G$1" pin="OUT+" pad="OUT+"/>
 <connect gate="G$1" pin="OUT-" pad="OUT-"/>
 <connect gate="G$1" pin="SYNC" pad="SYNC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN-SMA">
+<description>SMA connector</description>
+<gates>
+<gate name="G$1" symbol="CONN-SMA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="THD" package="SMA-THD">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-EDGE" package="SMA-EDGE">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="THD-SMD-EDGE" package="SMA-THD-EDGE">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3 GND@EDGE0 GND@EDGE1 GND@EDGE2 GND@EDGE3"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIG SIG@EDGE"/>
 </connects>
 <technologies>
 <technology name=""/>
