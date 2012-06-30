@@ -4130,7 +4130,9 @@ chip</description>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796"/>
 </package>
 <package name="RFM12B">
-<description>RFM12B radio module by HopeRF</description>
+<description>RFM12B radio module by HopeRF
+
+Footprint adapted from Jeelabs library part.</description>
 <wire x1="-7.5" y1="-7" x2="7.5" y2="-7" width="0.127" layer="21"/>
 <wire x1="7.5" y1="7" x2="-7.5" y2="7" width="0.127" layer="21"/>
 <wire x1="-5.715" y1="3.81" x2="-1.27" y2="3.81" width="0.127" layer="21" curve="-180"/>
@@ -4138,24 +4140,21 @@ chip</description>
 <wire x1="-5.715" y1="3.81" x2="-5.715" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="3.81" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <smd name="SDO" x="-8" y="6" dx="2.54" dy="1.27" layer="1"/>
-<smd name="IRQ" x="-8" y="4" dx="2.54" dy="1.27" layer="1"/>
-<smd name="FFS" x="-8" y="2" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$8" x="-8" y="0" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$9" x="-8" y="-2" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$10" x="-8" y="-4" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$12" x="-8" y="-6" dx="2.54" dy="1.27" layer="1"/>
-<smd name="SEL" x="8" y="6" dx="2.54" dy="1.27" layer="1"/>
+<smd name="!IRQ" x="-8" y="4" dx="2.54" dy="1.27" layer="1"/>
+<smd name="FSK/DATA/!FFS" x="-8" y="2" dx="2.54" dy="1.27" layer="1"/>
+<smd name="DCLK/CFIL/FFIT" x="-8" y="0" dx="2.54" dy="1.27" layer="1"/>
+<smd name="CLK" x="-8" y="-2" dx="2.54" dy="1.27" layer="1"/>
+<smd name="!RES" x="-8" y="-4" dx="2.54" dy="1.27" layer="1"/>
+<smd name="GND@0" x="-8" y="-6" dx="2.54" dy="1.27" layer="1"/>
+<smd name="!SEL" x="8" y="6" dx="2.54" dy="1.27" layer="1"/>
 <smd name="SCK" x="8" y="4" dx="2.54" dy="1.27" layer="1"/>
 <smd name="SDI" x="8" y="2" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$16" x="8" y="0" dx="2.54" dy="1.27" layer="1"/>
-<smd name="GND" x="8" y="-2" dx="2.54" dy="1.27" layer="1"/>
+<smd name="!INT!/VDI" x="8" y="0" dx="2.54" dy="1.27" layer="1"/>
+<smd name="GND@1" x="8" y="-2" dx="2.54" dy="1.27" layer="1"/>
 <smd name="VDD" x="8" y="-4" dx="2.54" dy="1.27" layer="1"/>
 <smd name="ANT" x="8" y="-6" dx="2.54" dy="1.27" layer="1"/>
 <text x="-6.35" y="-8.89" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="1.27" y="-5.08" size="1.27" layer="27" font="vector" ratio="16" rot="R90">&gt;VALUE</text>
-<text x="3.81" y="-6.35" size="1.016" layer="21" ratio="16">Ant.</text>
-<text x="3.81" y="-4.445" size="1.016" layer="21" ratio="16">VCC</text>
-<text x="3.81" y="-2.54" size="1.016" layer="21" ratio="16">GND</text>
 <rectangle x1="-4.445" y1="-6.35" x2="4.445" y2="6.35" layer="43"/>
 </package>
 <package name="FLC100">
@@ -4219,6 +4218,149 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
 <smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
 <smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
+</package>
+<package name="RASPBERRY-PI">
+<wire x1="82.6" y1="5.275" x2="-2.4" y2="5.275" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="5.275" x2="-2.4" y2="-6.225" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-34.025" x2="-2.4" y2="-50.725" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-50.725" x2="82.6" y2="-50.725" width="0.127" layer="51"/>
+<wire x1="82.6" y1="-50.725" x2="82.6" y2="5.275" width="0.127" layer="51"/>
+<wire x1="-0.925" y1="0.925" x2="0.925" y2="0.925" width="0.127" layer="21"/>
+<wire x1="0.925" y1="0.925" x2="0.925" y2="-0.925" width="0.127" layer="21" curve="1.965897"/>
+<wire x1="0.925" y1="-0.925" x2="-0.925" y2="-0.925" width="0.127" layer="21"/>
+<wire x1="-0.925" y1="-0.925" x2="-0.925" y2="0.925" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-6.225" x2="16.6" y2="-6.225" width="0.127" layer="51"/>
+<wire x1="16.6" y1="-6.225" x2="16.6" y2="-34.025" width="0.127" layer="51"/>
+<wire x1="16.6" y1="-34.025" x2="-2.4" y2="-34.025" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-34.025" x2="-2.4" y2="-6.225" width="0.127" layer="51"/>
+<wire x1="73.1" y1="-13.525" x2="90.3" y2="-13.525" width="0.127" layer="51"/>
+<wire x1="90.3" y1="-13.525" x2="90.3" y2="-26.775" width="0.127" layer="51"/>
+<wire x1="90.3" y1="-26.775" x2="73.1" y2="-26.775" width="0.127" layer="51"/>
+<wire x1="73.1" y1="-26.775" x2="73.1" y2="-13.525" width="0.127" layer="51"/>
+<wire x1="61.8" y1="-48.725" x2="83.6" y2="-48.725" width="0.127" layer="51"/>
+<wire x1="83.6" y1="-48.725" x2="83.6" y2="-33.325" width="0.127" layer="51"/>
+<wire x1="83.6" y1="-33.325" x2="61.8" y2="-33.325" width="0.127" layer="51"/>
+<wire x1="61.8" y1="-33.325" x2="61.8" y2="-48.725" width="0.127" layer="51"/>
+<wire x1="2.7" y1="-47.1" x2="-2.9" y2="-47.1" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="-47.1" x2="-2.9" y2="-39.5" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="-39.5" x2="2.7" y2="-39.5" width="0.127" layer="51"/>
+<wire x1="2.7" y1="-39.5" x2="2.7" y2="-47.1" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-1.225" x2="31.8" y2="-1.225" width="0.127" layer="21"/>
+<wire x1="31.8" y1="-1.225" x2="31.8" y2="3.775" width="0.127" layer="21"/>
+<wire x1="31.8" y1="3.775" x2="-1.4" y2="3.775" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="3.775" x2="-1.4" y2="-1.225" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-6.225" x2="-17.4" y2="-6.225" width="0.05" layer="51"/>
+<wire x1="-17.4" y1="-6.225" x2="-17.4" y2="-34.025" width="0.05" layer="51"/>
+<wire x1="-17.4" y1="-34.025" x2="-2.3" y2="-34.025" width="0.05" layer="51"/>
+<wire x1="-2.3" y1="-34.025" x2="-2.3" y2="-34.125" width="0.05" layer="51"/>
+<wire x1="38.61" y1="3.16" x2="38.61" y2="11.46" width="0.127" layer="51"/>
+<wire x1="38.61" y1="11.46" x2="47.51" y2="11.36" width="0.127" layer="51"/>
+<wire x1="47.51" y1="11.36" x2="47.51" y2="3.06" width="0.127" layer="51"/>
+<wire x1="47.51" y1="3.06" x2="38.22" y2="3.16" width="0.127" layer="51"/>
+<wire x1="38.17" y1="-6.85" x2="47.97" y2="-6.95" width="0.127" layer="51"/>
+<wire x1="47.97" y1="-6.95" x2="47.97" y2="3.05" width="0.127" layer="51"/>
+<wire x1="47.97" y1="3.05" x2="38.17" y2="3.15" width="0.127" layer="51"/>
+<wire x1="38.17" y1="3.15" x2="38.17" y2="-6.85" width="0.127" layer="51"/>
+<wire x1="68.6" y1="5.3" x2="68.6" y2="-6.1" width="0.127" layer="51"/>
+<wire x1="68.6" y1="-6.1" x2="56.6" y2="-6.1" width="0.127" layer="51"/>
+<wire x1="56.6" y1="-6.1" x2="56.6" y2="5.3" width="0.127" layer="51"/>
+<wire x1="65.9" y1="5.3" x2="66" y2="5.3" width="0.127" layer="51"/>
+<wire x1="66" y1="5.3" x2="66" y2="8.9" width="0.127" layer="51"/>
+<wire x1="66" y1="8.9" x2="59.4" y2="8.9" width="0.127" layer="51"/>
+<wire x1="59.4" y1="8.9" x2="59.4" y2="5.3" width="0.127" layer="51"/>
+<wire x1="35.1" y1="-51.9" x2="50.2" y2="-51.9" width="0.127" layer="51"/>
+<wire x1="50.2" y1="-51.9" x2="50.2" y2="-40.5" width="0.127" layer="51"/>
+<wire x1="50.2" y1="-40.5" x2="35.1" y2="-40.5" width="0.127" layer="51"/>
+<wire x1="35.1" y1="-40.5" x2="35.1" y2="-51.9" width="0.127" layer="51"/>
+<circle x="0.078" y="3.0996" radius="1.0152" width="0.1524" layer="52"/>
+<circle x="5.158" y="3.0996" radius="1.0152" width="0.1524" layer="52"/>
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<pad name="2" x="0" y="2.54" drill="1" diameter="1.6764"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<pad name="4" x="2.54" y="2.54" drill="1"/>
+<pad name="5" x="5.08" y="0" drill="1"/>
+<pad name="6" x="5.08" y="2.54" drill="1" diameter="1.6764"/>
+<pad name="7" x="7.62" y="0" drill="1"/>
+<pad name="8" x="7.62" y="2.54" drill="1"/>
+<pad name="9" x="10.16" y="0" drill="1"/>
+<pad name="10" x="10.16" y="2.54" drill="1"/>
+<pad name="11" x="12.7" y="0" drill="1"/>
+<pad name="12" x="12.7" y="2.54" drill="1"/>
+<pad name="13" x="15.24" y="0" drill="1"/>
+<pad name="14" x="15.24" y="2.54" drill="1"/>
+<pad name="15" x="17.78" y="0" drill="1"/>
+<pad name="16" x="17.78" y="2.54" drill="1"/>
+<pad name="17" x="20.32" y="0" drill="1"/>
+<pad name="18" x="20.32" y="2.54" drill="1"/>
+<pad name="19" x="22.86" y="0" drill="1"/>
+<pad name="20" x="22.86" y="2.54" drill="1"/>
+<pad name="21" x="25.4" y="0" drill="1"/>
+<pad name="22" x="25.4" y="2.54" drill="1"/>
+<pad name="23" x="27.94" y="0" drill="1"/>
+<pad name="24" x="27.94" y="2.54" drill="1"/>
+<pad name="25" x="30.48" y="0" drill="1"/>
+<pad name="26" x="30.48" y="2.54" drill="1"/>
+<text x="10" y="-3" size="1.27" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<text x="0.5" y="-2.5" size="1.27" layer="21" ratio="10" rot="R180">1</text>
+<text x="34" y="3.5" size="1.27" layer="21" ratio="10" rot="R180">26</text>
+<text x="23.5" y="-3" size="1.27" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
+<text x="7.7286" y="-24.3961" size="1.27" layer="51" rot="R90">SD Card </text>
+<text x="-0.4964" y="-1.6961" size="0.4064" layer="51">3v3</text>
+<text x="-0.3714" y="3.9289" size="0.4064" layer="51">5v</text>
+<text x="4.2786" y="3.8789" size="0.4064" layer="51">GND</text>
+<text x="87.69" y="-22.05" size="1.27" layer="51" rot="R90">USB</text>
+<text x="81.24" y="-42.15" size="1.27" layer="51" rot="R90">RJ45</text>
+<text x="0.215" y="-46.425" size="1.27" layer="51" rot="R90">usb +5V</text>
+<text x="12.5" y="-32.225" size="1.27" layer="51" rot="R90">SD card holder 5mm bottom sick</text>
+<text x="34" y="0.5" size="1.27" layer="21" ratio="10" rot="R180">25</text>
+<text x="34.4" y="-22.4" size="1.27" layer="51">Board 56x85mm H=16mm</text>
+<text x="60.35" y="2.475" size="1.27" layer="51">Audio</text>
+<text x="41.2" y="1.15" size="1.27" layer="51">RCA</text>
+<text x="39.975" y="-46.925" size="1.27" layer="51">HDMI</text>
+</package>
+<package name="RASPBERRY-PI-HEADER">
+<wire x1="-0.925" y1="0.925" x2="0.925" y2="0.925" width="0.127" layer="21"/>
+<wire x1="0.925" y1="0.925" x2="0.925" y2="-0.925" width="0.127" layer="21" curve="1.965897"/>
+<wire x1="0.925" y1="-0.925" x2="-0.925" y2="-0.925" width="0.127" layer="21"/>
+<wire x1="-0.925" y1="-0.925" x2="-0.925" y2="0.925" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.225" x2="31.8" y2="-1.225" width="0.127" layer="21"/>
+<wire x1="31.8" y1="-1.225" x2="31.8" y2="3.775" width="0.127" layer="21"/>
+<wire x1="31.8" y1="3.775" x2="-1.4" y2="3.775" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="3.775" x2="-1.4" y2="-1.225" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<pad name="2" x="0" y="2.54" drill="1" diameter="1.6764"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<pad name="4" x="2.54" y="2.54" drill="1"/>
+<pad name="5" x="5.08" y="0" drill="1"/>
+<pad name="6" x="5.08" y="2.54" drill="1" diameter="1.6764"/>
+<pad name="7" x="7.62" y="0" drill="1"/>
+<pad name="8" x="7.62" y="2.54" drill="1"/>
+<pad name="9" x="10.16" y="0" drill="1"/>
+<pad name="10" x="10.16" y="2.54" drill="1"/>
+<pad name="11" x="12.7" y="0" drill="1"/>
+<pad name="12" x="12.7" y="2.54" drill="1"/>
+<pad name="13" x="15.24" y="0" drill="1"/>
+<pad name="14" x="15.24" y="2.54" drill="1"/>
+<pad name="15" x="17.78" y="0" drill="1"/>
+<pad name="16" x="17.78" y="2.54" drill="1"/>
+<pad name="17" x="20.32" y="0" drill="1"/>
+<pad name="18" x="20.32" y="2.54" drill="1"/>
+<pad name="19" x="22.86" y="0" drill="1"/>
+<pad name="20" x="22.86" y="2.54" drill="1"/>
+<pad name="21" x="25.4" y="0" drill="1"/>
+<pad name="22" x="25.4" y="2.54" drill="1"/>
+<pad name="23" x="27.94" y="0" drill="1"/>
+<pad name="24" x="27.94" y="2.54" drill="1"/>
+<pad name="25" x="30.48" y="0" drill="1"/>
+<pad name="26" x="30.48" y="2.54" drill="1"/>
+<text x="10" y="-3" size="1.27" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<text x="0.5" y="-2.5" size="1.27" layer="21" ratio="10" rot="R180">1</text>
+<text x="34" y="3.5" size="1.27" layer="21" ratio="10" rot="R180">26</text>
+<text x="23.5" y="-3" size="1.27" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
+<text x="-0.4964" y="-1.6961" size="0.4064" layer="51">3v3</text>
+<text x="-0.3714" y="3.9289" size="0.4064" layer="51">5v</text>
+<text x="4.2786" y="3.8789" size="0.4064" layer="51">GND</text>
+<text x="34" y="0.5" size="1.27" layer="21" ratio="10" rot="R180">25</text>
 </package>
 </packages>
 <symbols>
@@ -5113,20 +5255,23 @@ XBee-like radio module.</description>
 <circle x="0" y="0" radius="0.762" width="0.254" layer="94"/>
 </symbol>
 <symbol name="RFM12B">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-5.08" y="-2.54" size="1.778" layer="94">RFM12B</text>
-<pin name="SEL" x="-12.7" y="5.08" visible="pad" length="short" direction="in"/>
-<pin name="SCK" x="-12.7" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="SDI" x="-12.7" y="0" visible="pad" length="short" direction="in"/>
-<pin name="SDO" x="-12.7" y="-2.54" visible="pad" length="short" direction="out"/>
-<pin name="ANT" x="12.7" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VCC" x="0" y="12.7" length="short" direction="pwr" rot="R270"/>
-<pin name="GND" x="0" y="-15.24" length="short" direction="pwr" rot="R90"/>
-<pin name="IRQ" x="-12.7" y="-7.62" visible="pad" length="short" direction="oc"/>
-<pin name="FFS" x="12.7" y="2.54" visible="pad" length="short" rot="R180"/>
+<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<pin name="!SEL" x="20.32" y="7.62" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SCK" x="20.32" y="5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SDI" x="20.32" y="2.54" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SDO" x="-20.32" y="7.62" visible="pin" length="short" direction="out"/>
+<pin name="ANT" x="20.32" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="VDD" x="20.32" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="20.32" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="!IRQ" x="-20.32" y="5.08" visible="pin" length="short" direction="out"/>
+<pin name="FSK/DATA/!FFS" x="-20.32" y="2.54" visible="pin" length="short"/>
+<pin name="DCLK/CFIL/FFIT" x="-20.32" y="0" visible="pin" length="short"/>
+<pin name="!INT!/VDI" x="20.32" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="CLK" x="-20.32" y="-2.54" visible="pin" length="short" direction="out"/>
+<pin name="!RES" x="-20.32" y="-5.08" visible="pin" length="short"/>
 </symbol>
 <symbol name="FLC100">
 <description>Stefan Mayer Instruments FLC-100 fluxgate magnetometer sensor</description>
@@ -5145,6 +5290,40 @@ XBee-like radio module.</description>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <pin name="SIGNAL" x="-5.08" y="0" visible="off" length="middle"/>
+<text x="5.08" y="0" size="1.27" layer="94">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="RASPBERRY-PI">
+<wire x1="-15.24" y1="53.34" x2="22.86" y2="53.34" width="0.254" layer="94"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="53.34" width="0.254" layer="94"/>
+<pin name="1-+3V3" x="-20.32" y="50.8" length="middle"/>
+<pin name="2-+5V" x="27.94" y="50.8" length="middle" rot="R180"/>
+<pin name="3-SDA0" x="-20.32" y="45.72" length="middle"/>
+<pin name="4-DNC" x="27.94" y="45.72" length="middle" rot="R180"/>
+<pin name="5-SCL0" x="-20.32" y="40.64" length="middle"/>
+<pin name="6-GND" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="7-GPIO7" x="-20.32" y="35.56" length="middle"/>
+<pin name="8-TX" x="27.94" y="35.56" length="middle" rot="R180"/>
+<pin name="9-DNC" x="-20.32" y="30.48" length="middle"/>
+<pin name="10-RX" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="11-GPIO0" x="-20.32" y="25.4" length="middle"/>
+<pin name="12-GPIO1" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="13-GPIO2" x="-20.32" y="20.32" length="middle"/>
+<pin name="14-DNC" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="15-GPIO3" x="-20.32" y="15.24" length="middle"/>
+<pin name="16-GPIO4" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="17-DNC" x="-20.32" y="10.16" length="middle"/>
+<pin name="18-GPIO5" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="19-SPI-MOSI" x="-20.32" y="5.08" length="middle"/>
+<pin name="20-DNC" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="21-SPI-MISO" x="-20.32" y="0" length="middle"/>
+<pin name="22-GPIO6" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="23-SPI-SCLK" x="-20.32" y="-5.08" length="middle"/>
+<pin name="24-SPI-CE0-N" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="25-DNC" x="-20.32" y="-10.16" length="middle"/>
+<pin name="26-SPI-CE1-N" x="27.94" y="-10.16" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6379,7 +6558,7 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C-EU">
+<deviceset name="C-EU" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
 </gates>
@@ -7023,23 +7202,27 @@ Eagle file download from Onecall web site</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RFM12B">
-<description>Adapted from Jeelabs libary part</description>
+<deviceset name="RFM12B" prefix="RF">
+<description>RFM12B radio module by HopeRF</description>
 <gates>
 <gate name="G$1" symbol="RFM12B" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SMD" package="RFM12B">
 <connects>
+<connect gate="G$1" pin="!INT!/VDI" pad="!INT!/VDI"/>
+<connect gate="G$1" pin="!IRQ" pad="!IRQ"/>
+<connect gate="G$1" pin="!RES" pad="!RES"/>
+<connect gate="G$1" pin="!SEL" pad="!SEL"/>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
-<connect gate="G$1" pin="FFS" pad="FFS"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IRQ" pad="IRQ"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="DCLK/CFIL/FFIT" pad="DCLK/CFIL/FFIT"/>
+<connect gate="G$1" pin="FSK/DATA/!FFS" pad="FSK/DATA/!FFS"/>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SDI" pad="SDI"/>
 <connect gate="G$1" pin="SDO" pad="SDO"/>
-<connect gate="G$1" pin="SEL" pad="SEL"/>
-<connect gate="G$1" pin="VCC" pad="VDD"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7067,7 +7250,7 @@ Eagle file download from Onecall web site</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CONN-SMA">
+<deviceset name="CONN-SMA" prefix="X">
 <description>SMA connector</description>
 <gates>
 <gate name="G$1" symbol="CONN-SMA" x="0" y="0"/>
@@ -7095,6 +7278,86 @@ Eagle file download from Onecall web site</description>
 <connects>
 <connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3 GND@EDGE0 GND@EDGE1 GND@EDGE2 GND@EDGE3"/>
 <connect gate="G$1" pin="SIGNAL" pad="SIG SIG@EDGE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RASPBERRY-PI" prefix="X">
+<description>&lt;b&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry Pi Board&lt;/a&gt;&lt;b&gt;&lt;br&gt;
+&lt;br&gt;Jacques Lagnel V1.0 (beta) 2012&lt;br&gt;&lt;br&gt;
+
+Board dimension:&lt;br&gt;
+&lt;a href="http://www.raspberrypi.org/forum/general-discussion/mechanical-profile-3d-models?value=3d%20model&amp;type=1&amp;include=1&amp;search=1&amp;ret=all"&gt;Forum 3D model&lt;/a&gt;&lt;br&gt;
+The GPIO Connector (P1):&lt;br&gt;
+&lt;a href="http://elinux.org/RPi_Low-level_peripherals"&gt;http://elinux.org/RPi_Low-level_peripherals&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RASPBERRY-PI" x="-2.54" y="-20.32"/>
+</gates>
+<devices>
+<device name="BOARD-OUTLINE" package="RASPBERRY-PI">
+<connects>
+<connect gate="G$1" pin="1-+3V3" pad="1"/>
+<connect gate="G$1" pin="10-RX" pad="10"/>
+<connect gate="G$1" pin="11-GPIO0" pad="11"/>
+<connect gate="G$1" pin="12-GPIO1" pad="12"/>
+<connect gate="G$1" pin="13-GPIO2" pad="13"/>
+<connect gate="G$1" pin="14-DNC" pad="14"/>
+<connect gate="G$1" pin="15-GPIO3" pad="15"/>
+<connect gate="G$1" pin="16-GPIO4" pad="16"/>
+<connect gate="G$1" pin="17-DNC" pad="17"/>
+<connect gate="G$1" pin="18-GPIO5" pad="18"/>
+<connect gate="G$1" pin="19-SPI-MOSI" pad="19"/>
+<connect gate="G$1" pin="2-+5V" pad="2"/>
+<connect gate="G$1" pin="20-DNC" pad="20"/>
+<connect gate="G$1" pin="21-SPI-MISO" pad="21"/>
+<connect gate="G$1" pin="22-GPIO6" pad="22"/>
+<connect gate="G$1" pin="23-SPI-SCLK" pad="23"/>
+<connect gate="G$1" pin="24-SPI-CE0-N" pad="24"/>
+<connect gate="G$1" pin="25-DNC" pad="25"/>
+<connect gate="G$1" pin="26-SPI-CE1-N" pad="26"/>
+<connect gate="G$1" pin="3-SDA0" pad="3"/>
+<connect gate="G$1" pin="4-DNC" pad="4"/>
+<connect gate="G$1" pin="5-SCL0" pad="5"/>
+<connect gate="G$1" pin="6-GND" pad="6"/>
+<connect gate="G$1" pin="7-GPIO7" pad="7"/>
+<connect gate="G$1" pin="8-TX" pad="8"/>
+<connect gate="G$1" pin="9-DNC" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HEADER" package="RASPBERRY-PI-HEADER">
+<connects>
+<connect gate="G$1" pin="1-+3V3" pad="1"/>
+<connect gate="G$1" pin="10-RX" pad="10"/>
+<connect gate="G$1" pin="11-GPIO0" pad="11"/>
+<connect gate="G$1" pin="12-GPIO1" pad="12"/>
+<connect gate="G$1" pin="13-GPIO2" pad="13"/>
+<connect gate="G$1" pin="14-DNC" pad="14"/>
+<connect gate="G$1" pin="15-GPIO3" pad="15"/>
+<connect gate="G$1" pin="16-GPIO4" pad="16"/>
+<connect gate="G$1" pin="17-DNC" pad="17"/>
+<connect gate="G$1" pin="18-GPIO5" pad="18"/>
+<connect gate="G$1" pin="19-SPI-MOSI" pad="19"/>
+<connect gate="G$1" pin="2-+5V" pad="2"/>
+<connect gate="G$1" pin="20-DNC" pad="20"/>
+<connect gate="G$1" pin="21-SPI-MISO" pad="21"/>
+<connect gate="G$1" pin="22-GPIO6" pad="22"/>
+<connect gate="G$1" pin="23-SPI-SCLK" pad="23"/>
+<connect gate="G$1" pin="24-SPI-CE0-N" pad="24"/>
+<connect gate="G$1" pin="25-DNC" pad="25"/>
+<connect gate="G$1" pin="26-SPI-CE1-N" pad="26"/>
+<connect gate="G$1" pin="3-SDA0" pad="3"/>
+<connect gate="G$1" pin="4-DNC" pad="4"/>
+<connect gate="G$1" pin="5-SCL0" pad="5"/>
+<connect gate="G$1" pin="6-GND" pad="6"/>
+<connect gate="G$1" pin="7-GPIO7" pad="7"/>
+<connect gate="G$1" pin="8-TX" pad="8"/>
+<connect gate="G$1" pin="9-DNC" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
