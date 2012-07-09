@@ -4197,6 +4197,7 @@ Footprint adapted from Jeelabs library part.</description>
 <smd name="GND@EDGE2" x="-2.54" y="-3.81" dx="1.524" dy="4.064" layer="16"/>
 <smd name="GND@EDGE3" x="2.54" y="-3.81" dx="1.524" dy="4.064" layer="16"/>
 <wire x1="0" y1="0" x2="0" y2="-3.81" width="1.524" layer="1"/>
+<text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SMA-THD">
 <description>SMA through-hole footprint based on data from MOLEX SMA jack connector, document SD-73100-0115.</description>
