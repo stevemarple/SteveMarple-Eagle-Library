@@ -4133,8 +4133,7 @@ chip</description>
 <description>RFM12B radio module by HopeRF
 
 Footprint adapted from Jeelabs library part.</description>
-<wire x1="-7.5" y1="-7" x2="7.5" y2="-7" width="0.127" layer="21"/>
-<wire x1="7.5" y1="7" x2="-7.5" y2="7" width="0.127" layer="21"/>
+<wire x1="8.0772" y1="8.1788" x2="-8.0772" y2="8.1788" width="0.127" layer="21"/>
 <wire x1="-5.715" y1="3.81" x2="-1.27" y2="3.81" width="0.127" layer="21" curve="-180"/>
 <wire x1="-1.27" y1="-1.27" x2="-5.715" y2="-1.27" width="0.127" layer="21" curve="-196.260205"/>
 <wire x1="-5.715" y1="3.81" x2="-5.715" y2="-1.27" width="0.127" layer="21"/>
@@ -4153,9 +4152,14 @@ Footprint adapted from Jeelabs library part.</description>
 <smd name="GND@1" x="8" y="-2" dx="2.54" dy="1.27" layer="1"/>
 <smd name="VDD" x="8" y="-4" dx="2.54" dy="1.27" layer="1"/>
 <smd name="ANT" x="8" y="-6" dx="2.54" dy="1.27" layer="1"/>
-<text x="-6.35" y="-8.89" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-6.35" y="-10.16" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="1.27" y="-5.08" size="1.27" layer="27" font="vector" ratio="16" rot="R90">&gt;VALUE</text>
 <rectangle x1="-4.445" y1="-6.35" x2="4.445" y2="6.35" layer="43"/>
+<wire x1="-8.0772" y1="-8.1788" x2="8.0772" y2="-8.1788" width="0.127" layer="21"/>
+<wire x1="8.0772" y1="8.1788" x2="8.0772" y2="6.9088" width="0.127" layer="21"/>
+<wire x1="8.0772" y1="-6.9088" x2="8.0772" y2="-8.1788" width="0.127" layer="21"/>
+<wire x1="-8.0772" y1="8.1788" x2="-8.0772" y2="6.9088" width="0.127" layer="21"/>
+<wire x1="-8.0772" y1="-6.9088" x2="-8.0772" y2="-8.1788" width="0.127" layer="21"/>
 </package>
 <package name="FLC100">
 <wire x1="-22.5" y1="7" x2="18.5" y2="7" width="0.127" layer="21"/>
@@ -4210,6 +4214,7 @@ Footprint adapted from Jeelabs library part.</description>
 <wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="21"/>
+<text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SMA-EDGE">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
@@ -4220,6 +4225,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <smd name="GND@1" x="5.08" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
 <smd name="GND@2" x="0" y="0" dx="1.524" dy="4.064" layer="16"/>
 <smd name="GND@3" x="5.08" y="0" dx="1.524" dy="4.064" layer="16"/>
+<text x="0" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="RASPBERRY-PI">
 <wire x1="82.6" y1="5.275" x2="-2.4" y2="5.275" width="0.127" layer="51"/>
