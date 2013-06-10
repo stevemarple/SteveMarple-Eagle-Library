@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6029,6 +6029,108 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="14" x="-3.81" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <wire x1="-4.445" y1="-0.508" x2="-4.445" y2="0.508" width="0.127" layer="21" curve="135"/>
 </package>
+<package name="SOT23-6-HAND">
+<description>&lt;b&gt;SOT23-6 HAND&lt;/b&gt;
+&lt;p&gt;
+SOT23-6 package with footprint designed for easier soldering by hand.&lt;/p&gt;</description>
+<wire x1="-0.7112" y1="-1.5748" x2="0.7112" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="1.5748" x2="-0.7112" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.27" x2="0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.762" x2="0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.27" x2="-0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.762" x2="-0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.254" x2="-0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.254" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.27" x2="-1.2446" y2="1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="1.27" x2="-1.2446" y2="0.762" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.762" x2="-0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.27" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.762" x2="-1.2446" y2="-0.762" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-1.27" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.254" x2="0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.762" x2="0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.27" x2="0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<smd name="1" x="-1.651" y="1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="3" x="-1.651" y="-1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="5" x="1.651" y="0" dx="2.5908" dy="0.5588" layer="1"/>
+<text x="-1.8542" y="1.4478" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-1.8542" y="1.4478" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="2" x="-1.651" y="0" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="4" x="1.651" y="-1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="6" x="1.651" y="1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<wire x1="1.2446" y1="1.27" x2="1.2446" y2="0.762" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.762" x2="1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.254" x2="-0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.254" x2="-0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.254" x2="-1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.762" x2="0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.27" x2="1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="1.2446" y1="1.27" x2="0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.762" x2="1.2446" y2="0.762" width="0" layer="51"/>
+</package>
+<package name="SOT23-3-HAND">
+<wire x1="-0.7112" y1="-1.5748" x2="0.7112" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="1.5748" x2="-0.7112" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-0.7112" y1="-1.4986" x2="0.7112" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.4986" x2="0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.27" x2="0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.762" x2="0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.4986" x2="-0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.27" x2="-0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.762" x2="-0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.254" x2="-0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.254" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.27" x2="-1.2446" y2="1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="1.27" x2="-1.2446" y2="0.762" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.762" x2="-0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.4986" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.27" x2="-0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.762" x2="-1.2446" y2="-0.762" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-1.27" x2="-0.7112" y2="-1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.254" x2="0.7112" y2="0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.762" x2="0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.27" x2="0.7112" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.254" x2="1.2446" y2="-0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.254" x2="1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<smd name="1" x="-1.651" y="1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="2" x="-1.651" y="-1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="3" x="1.651" y="0" dx="2.5908" dy="0.5588" layer="1"/>
+<text x="-1.8542" y="1.4478" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-1.8542" y="1.4478" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27" rot="SR0">&gt;VALUE</text>
+<wire x1="1.2446" y1="1.27" x2="1.2446" y2="0.762" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.762" x2="1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.254" x2="-0.7112" y2="0.254" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.254" x2="-0.7112" y2="-0.254" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.254" x2="-1.2446" y2="0.254" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.762" x2="0.7112" y2="-0.762" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.27" x2="1.2446" y2="-1.27" width="0" layer="51"/>
+<wire x1="1.2446" y1="1.27" x2="0.7112" y2="1.27" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.762" x2="1.2446" y2="0.762" width="0" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2N7000">
@@ -9427,6 +9529,19 @@ Output Disconnect or Input/Output Bypass Option</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOT23-6-HAND" package="SOT23-6-HAND">
+<connects>
+<connect gate="A" pin="EN" pad="3"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="SW" pad="1"/>
+<connect gate="A" pin="VFB" pad="4"/>
+<connect gate="A" pin="VIN" pad="6"/>
+<connect gate="A" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
@@ -10012,6 +10127,24 @@ Supply voltage 18.V - 5.5V.</description>
 <connect gate="G$1" pin="VDD" pad="1"/>
 <connect gate="G$1" pin="VSS" pad="20"/>
 <connect gate="G$1" pin="VUSB" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSS138">
+<description>&lt;b&gt;BSS138 FET&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="2N7000" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23-3-HAND" package="SOT23-3-HAND">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
