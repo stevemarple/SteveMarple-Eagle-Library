@@ -2925,7 +2925,7 @@ chip</description>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="1206-HAND">
-<description>1206 package with pad sizes adjusted to aid soldering by hand.</description>
+<description>&lt;p&gt;1206 package with pad sizes adjusted to aid soldering by hand.&lt;/p&gt;</description>
 <wire x1="-0.4064" y1="0.889" x2="0.4064" y2="0.889" width="0.1524" layer="21"/>
 <wire x1="-0.4064" y1="-0.889" x2="0.4064" y2="-0.889" width="0.1524" layer="21"/>
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -7734,6 +7734,31 @@ SOT23-6 package with footprint designed for easier soldering by hand.&lt;/p&gt;<
 <text x="2.54" y="1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <wire x1="-1.778" y1="-3" x2="11.938" y2="-3" width="0.2032" layer="21"/>
 </package>
+<package name="0805-REFLOW">
+<wire x1="-0.4064" y1="0.889" x2="0.4064" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-0.4064" y1="-0.889" x2="0.4064" y2="-0.889" width="0.1524" layer="21"/>
+<smd name="1" x="-0.875" y="0" dx="1.1" dy="1.4" layer="1"/>
+<smd name="2" x="0.875" y="0" dx="1.1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.27" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.286" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="41"/>
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
+<rectangle x1="-1.425" y1="-0.7" x2="-0.325" y2="0.7" layer="51"/>
+<rectangle x1="0.325" y1="-0.7" x2="1.425" y2="0.7" layer="51"/>
+</package>
+<package name="0805-HAND">
+<description>&lt;p&gt;0805 package with pad sizes adjusted to aid soldering by hand.&lt;/p&gt;</description>
+<wire x1="-0.4064" y1="0.889" x2="0.4064" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-0.4064" y1="-0.889" x2="0.4064" y2="-0.889" width="0.1524" layer="21"/>
+<smd name="1" x="-1.225" y="0" dx="1.8" dy="1.4" layer="1"/>
+<smd name="2" x="1.225" y="0" dx="1.8" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.27" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.286" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="41"/>
+<rectangle x1="-2.54" y1="-1.016" x2="2.54" y2="1.016" layer="39"/>
+<rectangle x1="-1.425" y1="-0.7" x2="-0.325" y2="0.7" layer="51"/>
+<rectangle x1="0.325" y1="-0.7" x2="1.425" y2="0.7" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2N7000">
@@ -9204,6 +9229,8 @@ XBee-like radio module.</description>
 <pin name="VCC_A" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
 <pin name="VCC_B" x="12.7" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="DIR" x="-12.7" y="-2.54" visible="pin" length="short" direction="in"/>
+<text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="DIODE-PAIR-COMMON-CATHODE">
 <wire x1="-3.81" y1="1.27" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
@@ -9532,6 +9559,15 @@ XBee-like radio module.</description>
 </technologies>
 </device>
 <device name="1206-HAND" package="1206-HAND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805-HAND" package="0805-HAND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10480,6 +10516,15 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="0805-HAND" package="0805-HAND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE-SCHOTTKY" prefix="D">
@@ -10707,6 +10752,15 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805-HAND" package="0805-HAND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
