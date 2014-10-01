@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7781,6 +7781,43 @@ SOT23-6 package with footprint designed for easier soldering by hand.&lt;/p&gt;<
 <text x="2.54" y="0" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="1.016" layer="25" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SOT89-HAND">
+<wire x1="10.7188" y1="-1.5748" x2="12.1412" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="12.1412" y1="1.5748" x2="10.7188" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="10.7188" y1="-1.4986" x2="12.1412" y2="-1.4986" width="0" layer="51"/>
+<wire x1="12.1412" y1="-1.4986" x2="12.1412" y2="-0.254" width="0" layer="51"/>
+<wire x1="12.1412" y1="1.4986" x2="11.7348" y2="1.4986" width="0" layer="51"/>
+<wire x1="11.7348" y1="1.4986" x2="11.1252" y2="1.4986" width="0" layer="51"/>
+<wire x1="11.1252" y1="1.4986" x2="10.7188" y2="1.4986" width="0" layer="51"/>
+<wire x1="10.7188" y1="1.4986" x2="10.7188" y2="1.27" width="0" layer="51"/>
+<wire x1="10.7188" y1="1.27" x2="10.7188" y2="0.762" width="0" layer="51"/>
+<wire x1="10.7188" y1="0.762" x2="10.7188" y2="-0.762" width="0" layer="51"/>
+<wire x1="10.7188" y1="1.27" x2="10.1854" y2="1.27" width="0" layer="51"/>
+<wire x1="10.1854" y1="1.27" x2="10.1854" y2="0.762" width="0" layer="51"/>
+<wire x1="10.1854" y1="0.762" x2="10.7188" y2="0.762" width="0" layer="51"/>
+<wire x1="10.7188" y1="-1.4986" x2="10.7188" y2="-1.27" width="0" layer="51"/>
+<wire x1="10.7188" y1="-1.27" x2="10.7188" y2="-0.762" width="0" layer="51"/>
+<wire x1="10.7188" y1="-0.762" x2="10.1854" y2="-0.762" width="0" layer="51"/>
+<wire x1="10.1854" y1="-0.762" x2="10.1854" y2="-1.27" width="0" layer="51"/>
+<wire x1="10.1854" y1="-1.27" x2="10.7188" y2="-1.27" width="0" layer="51"/>
+<wire x1="12.1412" y1="-0.254" x2="12.1412" y2="0.254" width="0" layer="51"/>
+<wire x1="12.1412" y1="0.254" x2="12.1412" y2="1.4986" width="0" layer="51"/>
+<wire x1="12.1412" y1="-0.254" x2="12.6746" y2="-0.254" width="0" layer="51"/>
+<wire x1="12.6746" y1="-0.254" x2="12.6746" y2="0.254" width="0" layer="51"/>
+<wire x1="12.6746" y1="0.254" x2="12.1412" y2="0.254" width="0" layer="51"/>
+<wire x1="11.7348" y1="1.4986" x2="11.1252" y2="1.4986" width="0" layer="51" curve="-180"/>
+<smd name="1" x="9.779" y="1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="2" x="9.779" y="-1.016" dx="2.5908" dy="0.5588" layer="1"/>
+<smd name="3" x="13.081" y="0" dx="2.5908" dy="0.5588" layer="1"/>
+<text x="8.89" y="1.905" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="8.89" y="-3.175" size="1.016" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="P$1" x="-1.5" y="-2.025" dx="0.48" dy="2.6" layer="1"/>
+<smd name="P$2" x="0" y="-0.6" dx="0.56" dy="5.45" layer="1"/>
+<smd name="P$3" x="1.5" y="-2.025" dx="0.48" dy="2.6" layer="1"/>
+<smd name="P$4" x="0" y="1.225" dx="1.2" dy="1.8" layer="1"/>
+<wire x1="-2.3" y1="-0.5334" x2="2.3" y2="-0.5334" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="1.905" x2="2.3" y2="1.905" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2N7000">
@@ -9523,7 +9560,7 @@ XBee-like radio module.</description>
 </deviceset>
 <deviceset name="MCP1702" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;Microchip MCP1702&lt;/b&gt;&lt;br/&gt;
-250mA loq quiescent current (2uA) LDO voltage regulator.</description>
+250mA low quiescent current (2uA) LDO voltage regulator.</description>
 <gates>
 <gate name="G$1" symbol="MCP1702" x="0" y="0"/>
 </gates>
@@ -9533,6 +9570,26 @@ XBee-like radio module.</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23-HAND" package="SOT23-3-HAND">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23-3-ROTATED">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
