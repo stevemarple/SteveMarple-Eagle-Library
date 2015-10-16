@@ -8174,6 +8174,105 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="1.2446" y1="1.27" x2="0.7112" y2="1.27" width="0" layer="51"/>
 <wire x1="0.7112" y1="0.762" x2="1.2446" y2="0.762" width="0" layer="51"/>
 </package>
+<package name="SSOP20-HAND">
+<wire x1="-3.75" y1="2.6924" x2="3.75" y2="2.6924" width="0.1524" layer="21"/>
+<wire x1="3.75" y1="2.6924" x2="3.75" y2="-2.6924" width="0.1524" layer="21"/>
+<wire x1="3.75" y1="-2.6924" x2="-3.75" y2="-2.6924" width="0.1524" layer="21"/>
+<wire x1="-3.75" y1="-2.6924" x2="-3.75" y2="2.6924" width="0.1524" layer="21"/>
+<wire x1="-3.6" y1="2.54" x2="3.6" y2="2.54" width="0.0508" layer="27"/>
+<wire x1="3.6" y1="2.54" x2="3.6" y2="-2.54" width="0.0508" layer="27"/>
+<wire x1="3.6" y1="-2.54" x2="-3.6" y2="-2.54" width="0.0508" layer="27"/>
+<wire x1="-3.6" y1="-2.54" x2="-3.6" y2="2.54" width="0.0508" layer="27"/>
+<circle x="-2.8448" y="-1.778" radius="0.4596" width="0.1524" layer="21"/>
+<smd name="20" x="-2.925" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="19" x="-2.275" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="18" x="-1.625" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="17" x="-0.975" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="16" x="-0.325" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="14" x="0.975" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="15" x="0.325" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="13" x="1.625" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="12" x="2.275" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="11" x="2.925" y="4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="1" x="-2.925" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="2" x="-2.275" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="3" x="-1.625" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="4" x="-0.975" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="5" x="-0.325" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="6" x="0.325" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="7" x="0.975" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="8" x="1.625" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="9" x="2.275" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<smd name="10" x="2.925" y="-4.291" dx="0.348" dy="2.667" layer="1"/>
+<text x="-2.54" y="1.27" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="0" size="1.016" layer="27" ratio="10" distance="0">&gt;VALUE</text>
+<rectangle x1="-3.0875" y1="-3.9" x2="-2.7625" y2="-2.9656" layer="51"/>
+<rectangle x1="-3.0875" y1="2.9656" x2="-2.7625" y2="3.9" layer="51"/>
+<rectangle x1="-2.4375" y1="2.9656" x2="-2.1125" y2="3.9" layer="51"/>
+<rectangle x1="-1.7875" y1="2.9656" x2="-1.4625" y2="3.9" layer="51"/>
+<rectangle x1="-1.1375" y1="2.9656" x2="-0.8125" y2="3.9" layer="51"/>
+<rectangle x1="-0.4875" y1="2.9656" x2="-0.1625" y2="3.9" layer="51"/>
+<rectangle x1="0.1625" y1="2.9656" x2="0.4875" y2="3.9" layer="51"/>
+<rectangle x1="0.8125" y1="2.9656" x2="1.1375" y2="3.9" layer="51"/>
+<rectangle x1="1.4625" y1="2.9656" x2="1.7875" y2="3.9" layer="51"/>
+<rectangle x1="2.1125" y1="2.9656" x2="2.4375" y2="3.9" layer="51"/>
+<rectangle x1="2.7625" y1="2.9656" x2="3.0875" y2="3.9" layer="51"/>
+<rectangle x1="-2.4375" y1="-3.9" x2="-2.1125" y2="-2.9656" layer="51"/>
+<rectangle x1="-1.7875" y1="-3.9" x2="-1.4625" y2="-2.9656" layer="51"/>
+<rectangle x1="-1.1375" y1="-3.9" x2="-0.8125" y2="-2.9656" layer="51"/>
+<rectangle x1="-0.4875" y1="-3.9" x2="-0.1625" y2="-2.9656" layer="51"/>
+<rectangle x1="0.1625" y1="-3.9" x2="0.4875" y2="-2.9656" layer="51"/>
+<rectangle x1="0.8125" y1="-3.9" x2="1.1375" y2="-2.9656" layer="51"/>
+<rectangle x1="1.4625" y1="-3.9" x2="1.7875" y2="-2.9656" layer="51"/>
+<rectangle x1="2.1125" y1="-3.9" x2="2.4375" y2="-2.9656" layer="51"/>
+<rectangle x1="2.7625" y1="-3.9" x2="3.0875" y2="-2.9656" layer="51"/>
+</package>
+<package name="1210-HAND">
+<wire x1="-0.4064" y1="1.397" x2="0.4064" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.4064" y1="-1.397" x2="0.4064" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-2.473" y1="1.4732" x2="2.473" y2="1.4732" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="1.4732" x2="2.473" y2="-1.4732" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-1.4732" x2="-2.473" y2="-1.4732" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-1.4732" x2="-2.473" y2="1.4732" width="0.0508" layer="39"/>
+<smd name="1" x="-1.499" y="0" dx="1.8" dy="2.794" layer="1"/>
+<smd name="2" x="1.499" y="0" dx="1.8" dy="2.794" layer="1"/>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.9009" y2="1.27" layer="51"/>
+<rectangle x1="0.889" y1="-0.8763" x2="1.6391" y2="0.8738" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+<rectangle x1="-0.4064" y1="-1.397" x2="0.4064" y2="1.397" layer="41"/>
+</package>
+<package name="TSR-1-XXXX">
+<wire x1="5.85" y1="-2" x2="-5.85" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5.85" y1="-2" x2="-5.85" y2="5.6" width="0.2032" layer="21"/>
+<wire x1="-5.85" y1="5.6" x2="5.85" y2="5.6" width="0.2032" layer="21"/>
+<wire x1="5.85" y1="5.6" x2="5.85" y2="-2" width="0.2032" layer="21"/>
+<pad name="IN" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
+<pad name="GND" x="0" y="0" drill="1" diameter="1.8796"/>
+<pad name="OUT" x="2.54" y="0" drill="1" diameter="1.8796"/>
+<circle x="-2.54" y="-3.175" radius="0.635" width="0" layer="21"/>
+</package>
+<package name="SOT223-HAND">
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
+<smd name="1" x="-2.3" y="-3.4294" dx="1.524" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="-3.4294" dx="1.524" dy="2.54" layer="1"/>
+<smd name="3" x="2.3" y="-3.4294" dx="1.524" dy="2.54" layer="1"/>
+<smd name="4" x="0" y="3.4294" dx="3.683" dy="2.54" layer="1" thermals="no"/>
+<text x="3.81" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.9271" y1="1.1303" x2="0.9271" y2="4.3307" layer="51" rot="R270"/>
+<rectangle x1="-0.9271" y1="-3.1623" x2="0.9271" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="-0.9271" y1="1.1303" x2="0.9271" y2="4.3307" layer="51" rot="R270"/>
+<rectangle x1="-0.9271" y1="-3.1623" x2="0.9271" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="51" rot="R270"/>
+<rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2N7000">
@@ -10322,6 +10421,16 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <technology name=""/>
 </technologies>
 </device>
+<device name="TSR-1-XXXX" package="TSR-1-XXXX">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="V_REG_LD1117VXX">
@@ -10335,6 +10444,26 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 <connect gate="G$1" pin="GND" pad="IN"/>
 <connect gate="G$1" pin="IN" pad="OUT"/>
 <connect gate="G$1" pin="OUT" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT223-HAND" package="SOT223-HAND">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT223" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11074,6 +11203,15 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOT23-1-3-HAND" package="SOT23-3-HAND">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
@@ -11282,6 +11420,15 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </technologies>
 </device>
 <device name="0805-HAND" package="0805-HAND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210-HAND" package="1210-HAND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12595,6 +12742,33 @@ Supply voltage 18.V - 5.5V.</description>
 </gates>
 <devices>
 <device name="" package="SO20">
+<connects>
+<connect gate="G$1" pin="!CTS" pad="13"/>
+<connect gate="G$1" pin="!RST" pad="4"/>
+<connect gate="G$1" pin="!RTS" pad="11"/>
+<connect gate="G$1" pin="D+" pad="19"/>
+<connect gate="G$1" pin="D-" pad="18"/>
+<connect gate="G$1" pin="GP0" pad="16"/>
+<connect gate="G$1" pin="GP1" pad="15"/>
+<connect gate="G$1" pin="GP2" pad="14"/>
+<connect gate="G$1" pin="GP3" pad="9"/>
+<connect gate="G$1" pin="GP4" pad="8"/>
+<connect gate="G$1" pin="GP5" pad="7"/>
+<connect gate="G$1" pin="GP6" pad="6"/>
+<connect gate="G$1" pin="GP7" pad="5"/>
+<connect gate="G$1" pin="OSC1" pad="2"/>
+<connect gate="G$1" pin="OSC2" pad="3"/>
+<connect gate="G$1" pin="RX" pad="12"/>
+<connect gate="G$1" pin="TX" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="20"/>
+<connect gate="G$1" pin="VUSB" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SSOP20-HAND" package="SSOP20-HAND">
 <connects>
 <connect gate="G$1" pin="!CTS" pad="13"/>
 <connect gate="G$1" pin="!RST" pad="4"/>
