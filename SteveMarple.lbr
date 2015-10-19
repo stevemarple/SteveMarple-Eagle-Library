@@ -11015,6 +11015,17 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="S0T223-HAND" package="SOT223-HAND">
+<connects>
+<connect gate="G$1" pin="GND@0" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RN-XV" prefix="XB">
