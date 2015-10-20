@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9907,13 +9907,15 @@ with only time−of−flight delays to consider."
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="-12.7" length="short" direction="pwr" rot="R90"/>
-<pin name="SDA_A" x="-15.24" y="-2.54" length="short"/>
-<pin name="SCL_A" x="-15.24" y="-5.08" length="short"/>
+<pin name="SDA_A" x="-15.24" y="0" length="short"/>
+<pin name="SCL_A" x="-15.24" y="-2.54" length="short"/>
 <pin name="VCC_A" x="-5.08" y="15.24" length="short" direction="pwr" rot="R270"/>
 <pin name="SDA_B" x="15.24" y="0" length="short" rot="R180"/>
 <pin name="SCL_B" x="15.24" y="-2.54" length="short" rot="R180"/>
 <pin name="VCC_B" x="5.08" y="15.24" length="short" direction="pwr" rot="R270"/>
 <pin name="EN" x="15.24" y="-7.62" length="short" rot="R180"/>
+<text x="5.08" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13657,7 +13659,7 @@ Derived from Sparkfun library.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCA9517A">
+<deviceset name="PCA9517A" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PCA9517A" x="0" y="0"/>
 </gates>
