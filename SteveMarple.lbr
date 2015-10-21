@@ -9917,6 +9917,17 @@ with only time−of−flight delays to consider."
 <text x="5.08" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="DIODE">
+<text x="-2.54" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="2N7000" prefix="Q">
@@ -13689,6 +13700,22 @@ Derived from Sparkfun library.</description>
 <connect gate="G$1" pin="SDA_B" pad="6"/>
 <connect gate="G$1" pin="VCC_A" pad="1"/>
 <connect gate="G$1" pin="VCC_B" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23-1-3-HAND" package="SOT23-3-HAND">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
