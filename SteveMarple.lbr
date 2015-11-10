@@ -1408,8 +1408,14 @@ Derived from Sparkfun package. Removed silkscreen printing which would extend ov
 <pad name="D+" x="-1.25" y="0" drill="0.92" diameter="1.6764" rot="R270"/>
 <pad name="P$1" x="-6.02" y="0.5" drill="2.3"/>
 <pad name="P$2" x="6.02" y="0.5" drill="2.3"/>
-<text x="-3.81" y="-6.35" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-7.62" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.175" y="-6.35" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-8.255" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.35" y1="-4.572" x2="-5.588" y2="-1.27" layer="41"/>
+<rectangle x1="-6.35" y1="-4.572" x2="6.35" y2="-3.556" layer="41"/>
+<rectangle x1="-6.35" y1="6.858" x2="6.35" y2="7.874" layer="41"/>
+<rectangle x1="-6.35" y1="2.286" x2="-5.588" y2="7.874" layer="41"/>
+<rectangle x1="5.588" y1="2.286" x2="6.35" y2="7.874" layer="41"/>
+<rectangle x1="5.588" y1="-4.572" x2="6.35" y2="-1.27" layer="41"/>
 </package>
 <package name="USB-A-S-NOSILK">
 <wire x1="3.6957" y1="6.5659" x2="-10.287" y2="6.5659" width="0.127" layer="51"/>
