@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -630,8 +630,8 @@
 <text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
 <package name="SO08">
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.803" x2="2.413" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.803" x2="-2.413" y2="-1.803" width="0.1524" layer="21"/>
 <circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
 <smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
@@ -1393,15 +1393,11 @@ Derived from Sparkfun package. Removed silkscreen printing which would extend ov
 <package name="USB-B-PTH-VERTICAL">
 <description>&lt;b&gt;USB Series B Hole Mounted&lt;/b&gt;</description>
 <wire x1="-6.015" y1="-4.075" x2="6.015" y2="-4.075" width="0.254" layer="21"/>
-<wire x1="6.015" y1="-4.075" x2="6.015" y2="7.385" width="0.254" layer="21"/>
+<wire x1="6.015" y1="-4.075" x2="6.015" y2="-1.397" width="0.254" layer="21"/>
+<wire x1="6.015" y1="2.413" x2="6.015" y2="7.385" width="0.254" layer="21"/>
 <wire x1="6.015" y1="7.385" x2="-6.015" y2="7.385" width="0.254" layer="21"/>
-<wire x1="-6.015" y1="7.385" x2="-6.015" y2="-4.075" width="0.254" layer="21"/>
-<wire x1="-4.2164" y1="-2.54" x2="4.2164" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="4.2164" y1="-2.54" x2="4.225" y2="3.81" width="0.254" layer="51"/>
-<wire x1="4.225" y1="3.81" x2="2.794" y2="5.2324" width="0.254" layer="51"/>
-<wire x1="2.794" y1="5.2324" x2="-2.794" y2="5.2324" width="0.254" layer="51"/>
-<wire x1="-2.794" y1="5.2324" x2="-4.2164" y2="3.81" width="0.254" layer="51"/>
-<wire x1="-4.2164" y1="3.81" x2="-4.2164" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-6.015" y1="7.385" x2="-6.015" y2="2.413" width="0.254" layer="21"/>
+<wire x1="-6.015" y1="-1.397" x2="-6.015" y2="-4.075" width="0.254" layer="21"/>
 <pad name="GND" x="1.25" y="0" drill="0.92" diameter="1.6764" rot="R90"/>
 <pad name="VBUS" x="1.25" y="3.2" drill="0.92" diameter="1.6764" rot="R90"/>
 <pad name="D-" x="-1.25" y="3.2" drill="0.92" diameter="1.6764" rot="R270"/>
@@ -1416,6 +1412,12 @@ Derived from Sparkfun package. Removed silkscreen printing which would extend ov
 <rectangle x1="-6.35" y1="2.286" x2="-5.588" y2="7.874" layer="41"/>
 <rectangle x1="5.588" y1="2.286" x2="6.35" y2="7.874" layer="41"/>
 <rectangle x1="5.588" y1="-4.572" x2="6.35" y2="-1.27" layer="41"/>
+<wire x1="-3.81" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="3.81" y2="3.81" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="3.81" width="0.254" layer="21"/>
 </package>
 <package name="USB-A-S-NOSILK">
 <wire x1="3.6957" y1="6.5659" x2="-10.287" y2="6.5659" width="0.127" layer="51"/>
@@ -5242,10 +5244,10 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <text x="-21.59" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="RJ45-8">
-<wire x1="-7.62" y1="10" x2="7.62" y2="10" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="-3" x2="-7.62" y2="10" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3" x2="-7.62" y2="10.16" width="0.2032" layer="21"/>
 <wire x1="-7.62" y1="-3" x2="7.62" y2="-3" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="10" x2="7.62" y2="-3" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-3" width="0.2032" layer="21"/>
 <wire x1="-7.62" y1="-3" x2="-7.62" y2="-10.8" width="0.2032" layer="51"/>
 <wire x1="-7.62" y1="-10.8" x2="7.62" y2="-10.8" width="0.2032" layer="51"/>
 <wire x1="7.62" y1="-10.8" x2="7.62" y2="-3" width="0.2032" layer="51"/>
