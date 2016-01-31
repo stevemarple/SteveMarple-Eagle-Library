@@ -1834,12 +1834,12 @@ Derived from Sparkfun package. Removed silkscreen printing which would extend ov
 <wire x1="22" y1="4" x2="22" y2="-4" width="0.2032" layer="21"/>
 <wire x1="22" y1="-4" x2="19" y2="-4" width="0.2032" layer="21"/>
 <circle x="9.06" y="0.1" radius="10" width="0.2032" layer="51"/>
-<pad name="2" x="0" y="0" drill="1.3" rot="R90"/>
-<pad name="1" x="20" y="0" drill="1.3" rot="R90"/>
-<text x="-6.985" y="0.635" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-6.985" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
-<text x="17.285" y="-0.6" size="1.27" layer="51">+</text>
-<text x="1.95" y="-0.6" size="1.27" layer="51">-</text>
+<pad name="2" x="0" y="0" drill="1.3" diameter="2.54" rot="R90"/>
+<pad name="1" x="20" y="0" drill="1.3" diameter="2.54" rot="R90"/>
+<text x="6.35" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="6.35" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="17.78" y="0" size="1.27" layer="51" ratio="10" align="center-right">+</text>
+<text x="2.54" y="0" size="1.27" layer="51" ratio="10" align="center-left">-</text>
 </package>
 <package name="BATTCON_245MM_PTH">
 <wire x1="-3.81" y1="-12.7" x2="3.81" y2="-12.7" width="0.2032" layer="21"/>
