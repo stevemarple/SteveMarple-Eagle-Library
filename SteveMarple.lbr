@@ -8345,6 +8345,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="-2.54" y="-4.445" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="PAD-SMALL">
+<pad name="1" x="0" y="0" drill="0.7" diameter="1.27"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2N7000">
@@ -12124,6 +12127,14 @@ Footprint adapted from Eagle file from Onecall web site</description>
 </gates>
 <devices>
 <device name="" package="PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMALL" package="PAD-SMALL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
